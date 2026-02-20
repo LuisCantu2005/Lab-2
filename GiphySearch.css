@@ -1,0 +1,192 @@
+.giphy-search-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  font-family: 'Arial', sans-serif;
+  color: white;
+}
+
+.giphy-search-container h1 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.giphy-search-container .subtitle {
+  text-align: center;
+  font-size: 1em;
+  opacity: 0.9;
+  margin-bottom: 30px;
+}
+
+.giphy-search-container .search-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.giphy-search-container .search-input {
+  flex: 1;
+  padding: 12px 15px;
+  border: none;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #333;
+  font-size: 1em;
+  transition: all 0.3s ease;
+}
+
+.giphy-search-container .search-input:focus {
+  outline: none;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.giphy-search-container .search-button {
+  padding: 12px 25px;
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.giphy-search-container .search-button:hover {
+  background-color: #ffa502;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(255, 107, 107, 0.4);
+}
+
+.giphy-search-container .loading,
+.giphy-search-container .error {
+  text-align: center;
+  font-size: 1.2em;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 8px;
+}
+
+.giphy-search-container .loading {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+.giphy-search-container .error {
+  background-color: rgba(255, 107, 107, 0.3);
+  color: #ffdddd;
+  border: 1px solid #ff6b6b;
+}
+
+.results-count {
+  text-align: center;
+  font-size: 1.1em;
+  margin-bottom: 25px;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.gifs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.gif-card {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.gif-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.gif-link {
+  text-decoration: none;
+  display: block;
+}
+
+.gif-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.gif-title {
+  color: white;
+  padding: 10px;
+  margin: 0;
+  font-size: 0.9em;
+  background-color: rgba(0, 0, 0, 0.3);
+  text-align: center;
+  max-height: 60px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.info-box {
+  background-color: rgba(255, 255, 255, 0.15);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  padding: 25px;
+  margin-top: 30px;
+}
+
+.info-box h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 1.3em;
+}
+
+.info-box ol {
+  margin: 10px 0;
+  padding-left: 20px;
+}
+
+.info-box li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.info-box a {
+  color: #fff;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.info-box a:hover {
+  opacity: 0.8;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .giphy-search-container {
+    margin: 20px;
+    padding: 20px;
+  }
+
+  .giphy-search-container h1 {
+    font-size: 1.8em;
+  }
+
+  .giphy-search-container .search-form {
+    flex-direction: column;
+  }
+
+  .gifs-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+}
