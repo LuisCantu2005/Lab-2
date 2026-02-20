@@ -184,7 +184,7 @@ Pueda usar cualquiera de estas APIs públicas para adaptar el proyecto:
 ---
 
 ## Autor
-**Lab 2 - Desarrollo con React Hooks y Fetch API**
+**Luis Eduardo Cantu Leyva A00840016**
 
 ---
 
